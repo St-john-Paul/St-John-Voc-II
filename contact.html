@@ -29,101 +29,316 @@
 
     <!--  Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .p-4 {
+            text-align: left; /* Aligns text to the left */
+            padding: 16px; /* Optional: Adds padding */
+        }
+        .fox {
+            font-weight: bold; /* Ensures the font is bold */
+        }
+        .name, .fox {
+            text-align: left; /* Aligns text to the left */
+        }
+        .btn {
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 0.375rem 0.75rem; /* Adjust padding as needed */
+    font-size: 18px; /* Ensure the text size is appropriate */
+}
+    
+        .toggle-button_ {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .toggle-button_ .line {
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+        }
+        .navbar-toggler_ {
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+    
+        .both {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .begin {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+.responsive-img {
+    max-width: 100%; /* Ensure image scales down to fit container */
+    height: auto;    /* Maintain aspect ratio */
+}
+       
+        .mainContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .int, .int2 {
+            padding: 10px;
+        }
+
+        .int2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            /* border: 3px solid black; */
+        }
+        .int img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tito {
+            font-size: 1.25em;
+            margin: 0;
+        }
+
+        .int2 b {
+            font-size: 1em;
+            color: blue;
+        }
+
+        @media (max-width: 768px) {
+            .begin {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .int2 h5 {
+                font-size: 1em;
+            }
+
+            .int2 b {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tito {
+                font-size: 1em;
+            }
+
+            .int2 b {
+                font-size: 0.8em;
+            }
+
+            .int img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+    }
+    .centerCards{
+        justify-content: center;
+    }
+    .img-preview {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .thumbnail {
+        width: 100px; /* Adjust as needed */
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .thumbnail.active {
+        border: 2px solid #000; /* Highlight active thumbnail */
+    }
+
+    .mybd{
+        border: 2px solid green;
+    }
+    </style>
+
+
+<style>
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Adjust gap as needed */
+        justify-content: center;
+    }
+    
+    .card {
+        flex: 1 1 calc(25% - 20px); /* Adjust the width of each card */
+        margin: 1px;
+        max-width: 300px; /* Adjust as needed */
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-body {
+        text-align: center;
+    }
+    
+    .card-footer {
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        .card {
+            flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .card {
+            flex: 1 1 100%; /* Stack cards vertically on very small screens */
+        }
+    }
+    </style>
 </head>
 
 <body >
    <!-- Spinner Start-->
-   <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+   <!-- <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="loader" role="status">
         <span></span>
       </div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
+    <div class="both ">
+       
+        <div class="int "> 
+            <img src="./img/Badge.png" class="responsive-img" >
+        </div>
+        <div class="int2">
+            <a href="index.html" class="">
+                <center><h5 class="tito">ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO.</h5></center>
+               <center><b style="font-size: 18px; color: blue;">YOUR SUCCESS BEGINS HERE.</b></center>
+            </a>
+           </div>
+ 
+   </div>
+
 
      <!-- Navbar Start -->
-     <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0">
-        <div class="both">
-         <div class="begin">
-             <div class="int"> 
-                 <img src="./img/Badge.png" style="width: 90px;" height="90px;">
-             </div>
-            <div class="int2">
-             <a href="index.html" >
-                 <h5 class="tito">ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO.</h5>
-                <center><b style="font-size: 18px; color: blue;">YOUR SUCCESS BEGINS HERE.</b></center>
-             </a>
-            </div>
-         </div>
+     <nav class="navbar  navbar-expand-lg   sticky-top p-0 ">
+        <div class="container-fluid pt-1 pb-1" style="background-color:rgb(248, 215, 155);">
+          <!-- <a class="navbar-brand" href="#">Home</a> -->
+          <button class="navbar-toggler_   d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavl" aria-expanded="false" aria-label="Togglel navigation">
+            <span class="">
+                <div class="toggle-button_">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills w-100" style=" background-color:rgb(248, 215, 155); justify-content: center;display: flex; padding-top: 5px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html"  style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Clubs</a>
+                <ul class="dropdown-menu">
+                  <li><a href="Clubs.html" class="dropdown-item active" style="font-weight: bolder; background-color: rgb(111, 111, 242);">Music, Dance & Drama Club</a></li>
+                  <li><a href="./Clubs.html" class="dropdown-item" style="font-weight: bolder;">Science Clubs</a></li>
+                  <li><a href="./Clubs.html" class="dropdown-item" style="font-weight: bolder;">Nkobazambogo Club</a></li>
+                  <li><a href="./Clubs.html" class="dropdown-item" style="font-weight: bolder;">Interact Club</a></li>
+                  <li><a href="./Clubs.html" class="dropdown-item" style="font-weight: bolder;">Scouts & Girl Guides Club</a></li>
+                  <li><a href="./Clubs.html" class="dropdown-item" style="font-weight: bolder;">Wildlife & Environment Club</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: bolder; color:whitesmoke; background-color: rgb(111, 111, 242); border: 1px solid whitesmoke; border-radius: 10px; margin-left: 5px;">Subjects</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./courses.html" class="dropdown-item active" style="font-weight: bolder; background-color: rgb(111, 111, 242);">O-Level Subjects</a></li>
+                  <li><a href="./A-level-courses.html" class="dropdown-item" style="font-weight: bolder;">A-Level Subjects</a></li>
+                  <li><a href="./vocational-courses.html" class="dropdown-item" style="font-weight: bolder;">Vocational Courses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Mission</a>
+                <ul class="dropdown-menu fade-down m-0">
+                  <li><a href="./Mission&Vision.html" class="dropdown-item active" style="font-weight: bolder; background-color: rgb(111, 111, 242);">Mission</a></li>
+                  <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Vision</a></li>
+                  <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Core Values</a></li>
+                  <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Objectives</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" id="Admission" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Admission</a>
+                <ul class="dropdown-menu fade-down m-0">
+                  <li><a href="./O-level.html" class="dropdown-item active" style="font-weight: bolder; background-color: rgb(111, 111, 242);">O-Level Courses</a></li>
+                  <li><a href="./A-level.html" class="dropdown-item" style="font-weight: bolder;">A-Level Courses</a></li>
+                  <li><a href="./vocation.html" class="dropdown-item" style="font-weight: bolder;">Vocational Courses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"  style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="./Fees.html" style="font-weight: bolder; background-color: rgb(111, 111, 242);">Fees</a></li>
+                  <li><a class="dropdown-item" href="./Gallery.html" style="font-weight: bolder;">Gallery</a></li>
+                  <li><a class="dropdown-item" href="./FAQs.html" style="font-weight: bolder;">FAQs</a></li>
+                  <li><a class="dropdown-item" href="./Other_requirements.html" style="font-weight: bolder;">Requirements</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Co-curricular-Activities.html" style="font-weight: bolder;">Co-curricular Activities</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; border-radius: 10px; margin-left: 5px; background-color: darkred;">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!--nav-->
-        <center>
-         <ul class="nav nav-pills" style="width: 1250px; height: 50px; background-color:rgb(248, 215, 155); justify-content: center;">
-             <li class="nav-item">
-               <a class="nav-link " aria-current="page" href="./index.html" style="font-weight: bolder; color:whitesmoke;  border: 1px solid whitesmoke; border-radius: 10px; margin-left: 5px; background-color: rgb(111, 111, 242);">Home</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link " aria-current="page" href="./about.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">About</a>
-               </li>
-            
-             <li class="nav-item dropdown">
-                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="font-weight: bolder; color:whitesmoke;  border: 1px solid whitesmoke; background-color: rgb(111, 111, 242);  border-radius: 10px; margin-left: 5px;">Clubs</a>
-                 <ul class="dropdown-menu">
-                     <li><a href="Clubs.html" class="dropdown-item active"  style="font-weight: bolder; background-color:  rgb(111, 111, 242);">Music, Dance & Drama Club</a></li>
-                     <li><a href="./Clubs.html" class="dropdown-item"  style="font-weight: bolder;">Science Clubs</a> </li>
-                     <li><a href="./Clubs.html" class="dropdown-item"  style="font-weight: bolder;">Nkobazambogo Club</a></li>
-                     <li><a href="./Clubs.html" class="dropdown-item"  style="font-weight: bolder;">Interact Club</a> </li>
-                     <li><a href="./Clubs.html" class="dropdown-item"  style="font-weight: bolder;">Scouts & Girl Guides Club</a> </li>
-                     <li><a href="./Clubs.html" class="dropdown-item"  style="font-weight: bolder;">Wildlife & Environment Club</a> </li>
-                     
-                 </ul>
-             </li>
-             <li class="nav-item dropdown">
-                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="font-weight: bolder; color:whitesmoke; background-color: rgb(111, 111, 242); border: 1px solid whitesmoke; border-radius: 10px; margin-left: 5px;">Subjects</a>
-                 <ul class="dropdown-menu">
-                     <li><a href="./courses.html" class="dropdown-item active" style="font-weight: bolder; background-color:  rgb(111, 111, 242);">O-Level Subjects</a></li>
-                     <li><a href="./A-level-courses.html" class="dropdown-item"  style="font-weight: bolder;">A-Level Subjects</a></li>
-                     <li><a href="./vocational-courses.html" class="dropdown-item "  style="font-weight: bolder;">Vocational Courses</a></li>
-                 </ul>
-             </li>
-             <li class="nav-item dropdown">
-                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-weight: bolder; color:whitesmoke; background-color: rgb(111, 111, 242); border: 1px solid whitesmoke;border-radius: 10px; margin-left: 5px;">Mission </a>
-                 <ul class="dropdown-menu fade-down m-0">
-                     <li><a href="./Mission&Vision.html" class="dropdown-item active" style="font-weight: bolder; background-color:  rgb(111, 111, 242);">Mission</a></li>
-                     <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Vision</a></li>
-                     <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Core Values</a></li>
-                     <li><a href="./Mission&Vision.html" class="dropdown-item" style="font-weight: bolder;">Objectives</a> </li>
-                 </ul>
-             </li>
-             <li class="nav-item dropdown">
-                 <a href="#" id="Admission" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242); border-radius: 10px; margin-left: 5px;">Admission</a>
-                 <ul class="dropdown-menu fade-down m-0">
-                     <li><a href="./O-level.html" class="dropdown-item active"  style="font-weight: bolder; background-color:  rgb(111, 111, 242);">O-Level Courses</a></li>
-                     <li><a href="./A-level.html" class="dropdown-item"  style="font-weight: bolder;">A-Level Courses</a></li>
-                     <li><a href="./vocation.html" class="dropdown-item"  style="font-weight: bolder;">Vocational Courses</a></li>
-                  </ul>
-             </li>
- 
-             <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-weight: bolder; color:whitesmoke; background-color: rgb(111, 111, 242); border: 1px solid whitesmoke;border-radius: 10px; margin-left: 5px;">Pages</a>
-                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item active" href="./Fees.html" style="font-weight: bolder; background-color:  rgb(111, 111, 242);">Fees</a></li>
-                   <li><a class="dropdown-item" href="./Gallery.html" style="font-weight: bolder;">Gallery</a></li>
-                   <li><a class="dropdown-item" href="./FAQs.html" style="font-weight: bolder;">FAQs</a></li>
-                   <li><a class="dropdown-item " href="./cv.html" style="font-weight: bolder;">CV's</a></li>
-                   <li><a class="dropdown-item" href="./Other _requirements.html" style="font-weight: bolder;">Requirements</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item" href="./Co-curricular-Activities.html" style="font-weight: bolder;">Co-curricular Activities</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " aria-current="page" href="./team.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: rgb(111, 111, 242);  border-radius: 10px; margin-left: 5px;">Team</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " aria-current="page" href="./contact.html" style="font-weight: bolder; color:whitesmoke; border: 1px solid whitesmoke; background-color: darkred; border-radius: 10px; margin-left: 5px;">Contact</a>
-               </li>
-         </ul>
-     </center>
-     </nav>
+      </nav>
      <!-- Navbar End -->
 
         <!-- Header Start -->
@@ -136,7 +351,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 text-center" style=" width: 1250px; background-color: darkred; margin-left: 1px;  margin-top: 0px; ">
+        <div class="col-lg-10 text-center" style=" width: inherit; background-color: darkred; margin-left: 1px;  margin-top: 0px; ">
             <h1 class="display-3 text-white animated slideInDown">Contact</h1>
         </div>
         <br>
@@ -251,7 +466,7 @@
       <br>
 
    <!-- Footer Start -->
-<div class="container-fluid  footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+   <div class="container-fluid  footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
@@ -301,10 +516,10 @@
                 <h4 class="text-white mb-3">Newsletter</h4>
                 <p style="font-size: 15px; font-weight: bolder;">At ST. JOHN PAUL II VOC & HIGH SCH MBALALA-MUKONO, we are always excited to welcome new families into our community. 
                     The best way to get to know us is to arrange a visit or reach out to us through Email or Contact.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="color: whitesmoke; background-color: orange;">SignUp</button>
-                </div>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="color: whitesmoke; background-color: orange; font-size: 18px; width: fit-content; padding: 0.375rem 0.75rem;"><span>SignUp</span></button>
+                    </div>
             </div>
         </div>
     </div>

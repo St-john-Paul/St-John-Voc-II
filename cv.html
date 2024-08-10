@@ -207,7 +207,8 @@
     .card {
         flex: 1 1 calc(25% - 20px); /* Adjust the width of each card */
         margin: 1px;
-        max-width: 300px; /* Adjust as needed */
+        max-width: 900px; /* Adjust as needed */
+        
     }
     
     .card-img-top {
@@ -234,7 +235,59 @@
             flex: 1 1 100%; /* Stack cards vertically on very small screens */
         }
     }
+    .cv-both_{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+
+    }
     </style>
+    <style>
+        .cv-card {
+            border: 2px solid #007bff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .cv-card img {
+            border: 3px solid #ffc107;
+            border-radius: 10px;
+            height: 220px;
+            width: 260px;
+            object-fit: cover;
+        }
+    
+        .cv-card h3, .cv-card h4 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+    
+        .cv-card h3 {
+            color: #007bff;
+        }
+    
+        .cv-card h4 {
+            color: #6c757d;
+        }
+    
+        .cv-card hr {
+            border-top: 2px solid #007bff;
+        }
+    
+        .cv-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    
+        .cv-card p, .cv-card ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+    
 </head>
 <body>
     <!-- Spinner Start-->
@@ -353,259 +406,122 @@
         <h1 class="display-3 text-white animated slideInDown">Board of Governors</h1>
     </div>
     <br>
-   <div class="cv-both">
-     <!-- cv one-->
-     <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:1395px; width: 580px; margin-left: 30px;">
-        <div class="cv-img">
-            <img class="img-fluid bg-light p-1" src="./img/st john/board/fr maviiri.jpg" alt="" style="height: 200px; width: 260px;  margin-right: 50px; border: 2px solid yellow;">
-        </div>
-        <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> Rev. Fr. Prof. John Chrysostom Maviiri.</h3> 
-        <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;"> Chairman Board Of Governors.</h3> 
-    <div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-        <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-           
+   <div class=" ">
 
-           <p class="fox2"><b>Education:</b> </p>
-           <p class="fox1"> PhD in Dogmatic Theology (Urban University, Rome) 1987.</p>
-           <p class="fox1"> Doctoral Dissertation entitled: Primacy in the Communion of Churches.</p>
-            <p class="fox2"><b>Engagements</b></p>
-            <p class="fox1">1987 – 1991: Teacher and Rector, St. Mbaaga Major Seminary, Ggaba, Uganda</p>
-            <p class="fox1">1991 – 1995: Parish Priest, Nakulabye Parish, Kampala, Uganda</p>
-            <p class="fox1">1995 - 2011: The Catholic University of Eastern Africa (CUEA, Nairobi) as</p>
-            <p class="fox1">Professor in the Faculty of Theology   </p>
-            <p class="fox1">Dean of Faculty of Theology (1996 – 2002)</p>
-            <p class="fox1">Vice Chancellor of CUEA (August 2002 – August 2011)</p>
-             <p class="fox1">2011 – 2012: Sabbatical Spiritual Year</p>
-             <p class="fox1">2012 – 2014: Pastoral / Administrative Experience – Lugazi Diocese</p>
-             <p class="fox1">Associate Parish Priest, St. Paul’s Church, Mukono</p>
-             <p class="fox1">Diocesan Treasurer</p>
-             <p class="fox1">Coordinator , Lugazi Diocesan Synod (2013)</p>
-            <p class="fox1">2015 – 2021:  Vice Chancellor of Uganda Martyrs University, Nkozi</p>
-            <p class="fox1">2021 – 2022: Sabbatical Spiritual Year</p>
-            <p class="fox1">2022 – 2023: Associate Parish Priest, St. Balikuddembe Church, Kiwanga</p>
-             <p class="fox2">2023 to-date </p> 
-             <p class="fox1">Parish Priest, Nkokonjeru Parish</p>
-             <p class="fox1">Episcopal Vicar for the Religious in Lugazi Diocese</p>
-             <p class="fox1">Dean, Nkokonjeru Deanery</p>
-             <p class="fox1">Council member, University of Kisubi</p>
-             <p class="fox1">Chairperson, BOG, Queen of Apostles Philosophy Centre, Jinja</p>
-             <p class="fox1">Chairperson, BOG, John Paul II Vocational and High School, Mukono</p>
-             <p class="fox2"><b>Research Interests:</b></p>
-             <p class="fox1"> ecumenism, theology in African context and higher  education</p>
-             <p class="fox2"><b>Hobbies:</b></p>
-             <p class="fox1"> reading, farming and sports.</p>
-
+<!-- CV One -->
+<div class="cv-card">
+    <div class="text-center">
+        <img src="./img/st john/board/fr maviiri.jpg" alt="Fr. Maviiri">
     </div>
-
- </div>
- </div>
-  <!-- cv two-->
-  <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:1427px; width: 580px; margin-left: 30px;">
-    <div class="cv-img">
-        <img class="img-fluid bg-light p-1" src="./img/st john/board/mr alex.jpg" alt="" style="height: 200px; width: 240px;  margin-right: 50px; border: 3px solid yellow;">
+    <h3 class="text-center mt-3">Rev. Fr. Prof. John Chrysostom Maviiri</h3>
+    <h4 class="text-center">Chairman Board Of Governors</h4>
+    <hr>
+    <div>
+        <h5><strong>Education:</strong></h5>
+        <p>PhD in Dogmatic Theology (Urban University, Rome) 1987.</p>
+        <p>Doctoral Dissertation: Primacy in the Communion of Churches.</p>
+        <h5><strong>Engagements:</strong></h5>
+        <ul>
+            <li>1987 – 1991: Teacher and Rector, St. Mbaaga Major Seminary, Ggaba, Uganda</li>
+            <li>1991 – 1995: Parish Priest, Nakulabye Parish, Kampala, Uganda</li>
+            <li>1995 - 2011: Professor in the Faculty of Theology, The Catholic University of Eastern Africa (CUEA, Nairobi)</li>
+            <li>Dean of Faculty of Theology (1996 – 2002)</li>
+            <li>Vice Chancellor of CUEA (August 2002 – August 2011)</li>
+            <li>2011 – 2012: Sabbatical Spiritual Year</li>
+            <li>2012 – 2014: Pastoral/Administrative Experience – Lugazi Diocese</li>
+            <li>2015 – 2021: Vice Chancellor of Uganda Martyrs University, Nkozi</li>
+            <li>2021 – 2022: Sabbatical Spiritual Year</li>
+            <li>2022 – 2023: Associate Parish Priest, St. Balikuddembe Church, Kiwanga</li>
+            <li>2023 to-date: Parish Priest, Nkokonjeru Parish, Episcopal Vicar for the Religious in Lugazi Diocese, Dean, Nkokonjeru Deanery, Council member, University of Kisubi, Chairperson, BOG, Queen of Apostles Philosophy Centre, Jinja, Chairperson, BOG, John Paul II Vocational and High School, Mukono</li>
+        </ul>
+        <h5><strong>Research Interests:</strong></h5>
+        <p>Ecumenism, theology in African context and higher education</p>
+        <h5><strong>Hobbies:</strong></h5>
+        <p>Reading, farming, and sports.</p>
     </div>
-    <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> Muheesi Alex Gerald</h3> 
-    <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;">Chief Finance Officer.</h3> 
-<div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-    <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-        <p class="fox2"> Education:</p>
-        <P class="fox1">PhD in Business Administration (In progress, Kabale University, 2021-2025)</P>
-        <P class="fox1">Postgraduate Diploma in Education (PDE) (Kampala International University, 2017-2018)</P>
-        <P class="fox1">Master of Business Administration (MBA) (Uganda Martyrs University, 2012-2014)</P>
-        <P class="fox1">Degree in Procurement and Logistics Management (Kyambogo University, 2004-2007)</P>
-        <P class="fox1">Various Certificates** in Planning, Budgeting, Procurement, and Education.</P>
-         <p class="fox2">Current position</p>
-         <p class="fox1">Assistant Lecturer & Head of Department (Management & Entrepreneurship)</p>
-         <p class="fox1">at Uganda Martyrs University (2023 - Present)</p>
-         <p class="fox2"> Previous Experience:</p>
-         <p class="fox1">Assistant Lecturer at Uganda Martyrs University (2016-2023)</p>
-         <p class="fox1">Assistant Lecturer & Head of Department (Business) at Uganda Martyrs University - Kabale Campus (2015-2018)</p>
-        <p class="fox1">Part-time lecturer in Procurement at Kabale University (2016-2019)</p>
-        <p class="fox1">Visiting facilitator in Logistics and Procurement at various institutions (2015-2016, 2013-2015)</p>
-        <p class="fox1">A-Level Mathematics Teacher at Bethany High School and Science Foundation College (2004-2014)</p>
-          <p class="fox2">Key Skills:</p>
-          <p class="fox1">Integrity & Ethics</p>
-          <p class="fox1">Professionalism</p>
-          <p class="fox1">Leadership</p>
-          <p class="fox1">Teamwork</p>
-          <p class="fox1">Training</p>
-          <p class="fox1">Communication</p>
-          <p class="fox1">Continuous Improvement</p>
-        <p class="fox2">Community Engagement:</p>
-        <p class="fox1">  Research Coordinator at Uganda Martyrs University</p>
-        <p class="fox1">  Internship Coordinator at Uganda Martyrs University</p>
-        <p class="fox1">  Chairperson of various committees related to procurement and education.</p>
-
 </div>
 
+<!-- CV Two -->
+<div class="cv-card">
+    <div class="text-center">
+        <img src="./img/st john/board/mr alex.jpg" alt="Mr. Alex">
+    </div>
+    <h3 class="text-center mt-3">Muheesi Alex Gerald</h3>
+    <h4 class="text-center">Chief Finance Officer</h4>
+    <hr>
+    <div>
+        <h5><strong>Education:</strong></h5>
+        <ul>
+            <li>PhD in Business Administration (In progress, Kabale University, 2021-2025)</li>
+            <li>Postgraduate Diploma in Education (PDE) (Kampala International University, 2017-2018)</li>
+            <li>Master of Business Administration (MBA) (Uganda Martyrs University, 2012-2014)</li>
+            <li>Degree in Procurement and Logistics Management (Kyambogo University, 2004-2007)</li>
+            <li>Various Certificates in Planning, Budgeting, Procurement, and Education.</li>
+        </ul>
+        <h5><strong>Current Position:</strong></h5>
+        <p>Assistant Lecturer & Head of Department (Management & Entrepreneurship) at Uganda Martyrs University (2023 - Present)</p>
+        <h5><strong>Previous Experience:</strong></h5>
+        <ul>
+            <li>Assistant Lecturer at Uganda Martyrs University (2016-2023)</li>
+            <li>Assistant Lecturer & Head of Department (Business) at Uganda Martyrs University - Kabale Campus (2015-2018)</li>
+            <li>Part-time lecturer in Procurement at Kabale University (2016-2019)</li>
+            <li>Visiting facilitator in Logistics and Procurement at various institutions (2015-2016, 2013-2015)</li>
+            <li>A-Level Mathematics Teacher at Bethany High School and Science Foundation College (2004-2014)</li>
+        </ul>
+        <h5><strong>Key Skills:</strong></h5>
+        <ul>
+            <li>Integrity & Ethics</li>
+            <li>Professionalism</li>
+            <li>Leadership</li>
+            <li>Teamwork</li>
+            <li>Training</li>
+            <li>Communication</li>
+            <li>Continuous Improvement</li>
+        </ul>
+        <h5><strong>Community Engagement:</strong></h5>
+        <p>Research Coordinator at Uganda Martyrs University, Internship Coordinator at Uganda Martyrs University, Chairperson of various committees related to procurement and education.</p>
+    </div>
 </div>
-</div> 
+
+<!-- CV Three -->
+<div class="cv-card">
+    <div class="text-center">
+        <img src="./img/st john/latest/ccta2.jpg" alt="Sr. Dr. Marie">
+    </div>
+    <h3 class="text-center mt-3">Sr. Dr. Marie Goretti Nakitende</h3>
+    <h4 class="text-center">Director</h4>
+    <hr>
+    <div>
+        <h5><strong>Education:</strong></h5>
+        <ul>
+            <li>Doctor of Philosophy (PhD) Education Leadership and Management, Cardinal Stritch University, Milwaukee, Wisconsin-USA (December 2012)</li>
+            <li>Master of Business Administration (MBA) Cardinal Stritch University, Milwaukee, Wisconsin USA (May 2009)</li>
+            <li>Bachelor of Arts in Business Administration and Management (Minor in Communication & Computer Science) (B.A) Alverno College, Milwaukee, Wisconsin USA (May 2006)</li>
+            <li>Assoc. Deg. Information Technology and Business Administration. Milwaukee Area Technical College, Wisconsin USA (May 2003)</li>
+            <li>Diploma Accounting & Finance, Nkokonjeru Institute of Management, Uganda (1995)</li>
+        </ul>
+        <h5><strong>Professional Development:</strong></h5>
+        <ul>
+            <li>Transforming Employability For Social Change in East Africa (TESCEA) Training (2021)</li>
+            <li>Pedagogy Training for Transformative teaching and learning (2019)</li>
+            <li>Academic Leadership and Emotional Intelligence (2018)</li>
+            <li>Scientific Data Management Systems Training (2018)</li>
+            <li>Training of Trainers Entrepreneurship Academy Training (2019)</li>
+            <li>Research methodology and Scholarly Writing Training (2019)</li>
+            <li>Research Supervision of Postgraduate Students Training (2019)</li>
+            <li>Principal Investigator - Community Lending with Outside Capital (CLOC): Case study of small scale enterprises, Uganda. (2019 – 2021)</li>
+        </ul>
+        <h5><strong>Community Outreach and Engagement:</strong></h5>
+        <ul>
+            <li>Director St. John Paul II Voc. High School, Mbalala-Mukono</li>
+            <li>Dean, Faculty of Business Administration and Management Uganda Martyrs University (2017 to Feb, 2023)</li>
+            <li>Chairperson University Management Committee (UMC) Uganda Martyrs University</li>
+            <li>Coordinator-Business Desk, Faculty of Business Administration and Management</li>
+            <li>Coordinator UBTEB, Secretariat, Faculty of Business Administration and Management</li>
+        </ul>
+    </div>
+</div>
    </div>
-     <br>
-     <div class="cv-both2">
-        <!-- cv three-->
-        <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:2700px; width: 580px; margin-left: 30px;">
-           <div class="cv-img">
-               <img class="img-fluid bg-light p-1" src="./img/st john/latest/ccta2.jpg" alt="" style="height: 200px; width: 240px;  margin-right: 50px; border: 2px solid yellow;">
-           </div>
-           <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> Sr. Dr. Marie Goretti Nakitende.</h3> 
-           <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;"> Director.</h3> 
-       <div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-           <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-            <p class="fox1">Uganda Martyrs University.</p>
-            <p class="fox1">P.O.Box 5498 Kampala, Uganda.</p>
-            <p class="fox1">Email: mnakitende@umu.ac.ug Tel. +256784824441</p>
-             <p class="fox1">Sr. Dr. Marie is a Senior Lecturer in Management and Marketing Department at Uganda Martyrs University (UMU), </p>
-             <p class="fox1">holds a PhD (Education Leadership and Management), MBA, BA (Management) and Diploma Accounts.</p>
-             <p class="fox1">Teach both undergraduate and postgraduate levels. Teaching areas include: Entrepreneurship, International Business,</p>
-             <p class="fox1">International Business Strategy, and Business policy, Management Research, Business Excellence,</p>
-             <p class="fox1">Human Resource Management, Marketing, and Organizational Behavior.</p>
-            <p class="fox1"> Scholarly writing: research supervision for undergraduate, Masters, and Doctoral students. </p>
-            <p class="fox1">  Renowned international scholar, Published many scholarly articles and book chapters in international journals. </p>
-            <p class="fox2"> Education</p>
-            <p class="fox1"> Doctor of Philosophy (PhD) Education Leadership and Management, Cardinal Stritch University, Milwaukee, Wisconsin-USA (December 2012)</p>
-            <p class="fox1"> Master of Business Administration (MBA) Cardinal Stritch University, Milwaukee, Wisconsin USA (May 2009)</p>
-            <p class="fox1"> Bachelor of Arts in Business Administration and Management (Minor in Communication & Computer Science) (B.A) Alverno College, Milwaukee, Wisconsin USA (May 2006)</p>
-            <p class="fox1"> Assoc. Deg. Information Technology and Business Administration. Milwaukee Area Technical College, Wisconsin USA (May 2003)</p>
-            <p class="fox1"> Diploma Accounting & Finance, Nkokonjeru Institute of Management, Uganda (1995)</p>
-             <p class="fox2">2023 to-date </p> 
-              <p class="fox1">Parish Priest, Nkokonjeru Parish</p>
-              <p class="fox1">Episcopal Vicar for the Religious in Lugazi Diocese</p>
-              <p class="fox1">Dean, Nkokonjeru Deanery</p>
-              <p class="fox1">Council member, University of Kisubi</p>
-              <p class="fox1">Chairperson, BOG, Queen of Apostles Philosophy Centre, Jinja</p>
-              <p class="fox1">Chairperson, BOG, John Paul II Vocational and High School, Mukono</p>
-        <p class="fox2">Areas of Professional Development Gained</p>
-        <p class="fox1">Transforming Employability For Social Change in East Africa (TESCEA) Training (2021)</p>
-        <p class="fox1">Pedagogy Training for Transformative teaching and learning (2019)</p>
-        <p class="fox1">Academic Leadership and Emotional Intelligence (2018)</p>
-        <p class="fox1">Scientific Data Management Systems Training (2018)</p>
-        <p class="fox1">Training of Trainers Entrepreneurship Academy Training (2019)</p>
-        <p class="fox1">Research methodology and Scholarly Writing Training (2019)</p>
-        <p class="fox1">Research Supervision of Postgraduate Students Training (2019)</p>
-        <p class="fox1">Principal Investigator-Community Lending with outside capita (CLOC)l: Case study of small scale enterprises, Uganda. (2019 – 2021)</p>
-        <p class="fox2">Community Outreach and other Engagement</p>
-        <p class="fox1">Director  St. John Paul II Voc. High School, Mbalala-Mukono.</p>
-        <p class="fox1">Dean, Faculty of Business Administration and Management Uganda Martyrs University ( 2017 to  Feb,2023)</p>
-        <p class="fox1">Chairperson Dean’s Forum, Uganda Martyrs University (2017- 2021)</p>
-        <p class="fox1">Coordinator Management and Innovation (MIT)PhD Program (2021-2023)</p>
-        <p class="fox1">UMU Scholarship Committee ( 2017-2023)</p>
-        <p class="fox1">UMU Senate Member ( 2017 – 2023)</p>
-        <p class="fox1">UMU High Degrees Committee ( 2017-2023)</p>
-        <p class="fox1">Coordinator Student Training in Entrepreneurship Promotion (STEP)</p>
-        <p class="fox1">Coordinator  Start Hub Entrepreneurship</p>
-        <p class="fox1">Patron Student Entrepreneurship Club-</p>
-        <p class="fox1">BAM Faculty Marketing Committee</p>
-        <p class="fox1">BAM Faculty Promotion committee</p>
-        <p class="fox1">Design and implement Business Short Courses</p>
-        <p class="fox1">Co-Founder and Promoter Grand Mothers Beyond Boarders</p>
-        <p class="fox1">Student Career Guidance and Mentorship:</p>
-        <p class="fox1">Member Board of Governors-St. Joseph SS</p>
-        <p class="fox1">Member Board of Governors –St. Antony Kakooge SS</p>
-        <p class="fox1">Member Board of Trustees –St. John Paul II Voc High School</p>
-        <p class="fox1">Member Phi Theta Kappa International Society · Member PSE (Pi Sigma Epsilon) USA · Member Sales & Marketing Executives (SME), USA · Ambassador Catholic Relief Services International Organization</p>
-        <p class="fox1">External Examiner</p>
-       </div>
-   
-    </div>
-    </div>
-     <!-- cv four-->
-     <div class="cv-section" style="display: flex; flex-direction: column;">
-        <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:929px; width: 580px; margin-left: 30px;">
-            <div class="cv-img">
-                <img class="img-fluid bg-light p-1" src="./img/st john/latest/prosy.jpg" alt="" style="height: 200px; width: 240px;  margin-right: 50px; border: 3px solid yellow;">
-            </div>
-            <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> KATAIKE PROSSY</h3> 
-            <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;">Chief Finance Officer.</h3> 
-        <div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-            <p class="fox2"> EDUCATION:</p>
-            <p class="fox2"> HIGH LEVEL OF EDUCATION ATTAINED:</p> 
-            <p class="fox1"> BACHELOR’S DEGREE</p>
-            <p class="fox2"> AWARD: </p>
-            <p class="fox1"> FIRST CLASS HOUNORS</p>
-            <p class="fox2"> COURSE:</p>
-            <p class="fox1"> BACHELOR OF VOCATIONAL STUDIES IN ART AND DESIGN WITH EDUCATION</p>
-            <p class="fox2"> INSTITUTIONS:</p>
-            <p class="fox1"> KYAMBOGO UNIVERSITY</p>
-            <p class="fox1"> KISIKI COLLEGE NAMUTUMBA</p>
-            <p class="fox1">NAMUTUMBA PRIMARY SCHOOL</p>
-            <p class="fox2"> WORKING EXPERIENCE: </p>
-            <p class="fox1"> 3 YEARS</p>
-            <p class="fox2"> RESPONSIBILITIES HELD: </p>
-            <p class="fox1"> ASSISTANT DIRECTOR OF STUDIES. (ASST.DOS), </p>
-            <p class="fox1"> WELFARE MISTRESS </p>
-            <p class="fox1"> LIBRARIAN</p>
-        
-        </div>
-        
-        </div>
-        </div> 
-        <br>
-        <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:930px; width: 580px; margin-left: 30px;">
-            <div class="cv-img">
-                <img class="img-fluid bg-light p-1" src="./img/st john/avator.jpeg" alt="" style="height: 200px; width: 240px;  margin-right: 50px; border: 3px solid yellow;">
-            </div>
-            <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> NAME</h3> 
-            <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;">TITLE.</h3> 
-        <div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-                <p class="fox2"> EDUCATION:</p>
-                <p class="fox2"> HIGH LEVEL OF EDUCATION ATTAINED:</p> 
-                <p class="fox1"> ******* </p>
-                <p class="fox2"> AWARD: </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox2"> COURSE:</p>
-                <p class="fox1"> ******* </p>
-                <p class="fox2"> INSTITUTIONS:</p>
-                <p class="fox1"> ******* </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox2"> WORKING EXPERIENCE: </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox1"> ******* </p>
-                <p class="fox2"> RESPONSIBILITIES HELD: </p>
-                <p class="fox1"> ******* </p>
-                
-        
-        </div>
-        
-        </div>
-        </div> 
-        <br>
-        <div class="cv-container" style="display: flex; flex-direction: column; border: 2px solid darkred; height:775px; width: 580px; margin-left: 30px;">
-            <div class="cv-img">
-                <img class="img-fluid bg-light p-1" src="./img/st john/avator.jpeg" alt="" style="height: 200px; width: 240px;  margin-right: 50px; border: 3px solid yellow;">
-            </div>
-            <h3 style="font-weight: bolder; font-size: 25px; margin-top: 0px; color: blue; margin-left: 20px;"> NAME</h3> 
-            <h3 style="font-weight: bolder; font-size: 20px; margin-top: 0px; color: blue; margin-left: 20px;">TITLE.</h3> 
-        <div class="cv-deails" style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div class="cv-first-col" style="border:1px solid gray; width: 600px;justify-content: space-between; background-color:rgb(250, 250, 249);">
-            <p class="fox2"> EDUCATION:</p>
-            <p class="fox2"> HIGH LEVEL OF EDUCATION ATTAINED:</p> 
-            <p class="fox1"> ******* </p>
-            <p class="fox2"> AWARD: </p>
-            <p class="fox1"> ******* </p>
-            <p class="fox2"> COURSE:</p>
-            <p class="fox1"> ******* </p>
-            <p class="fox2"> INSTITUTIONS:</p>
-            <p class="fox1"> ******* </p>
-         
-            <p class="fox2"> WORKING EXPERIENCE: </p>
-            <p class="fox1"> ******* </p>
-            <p class="fox2"> RESPONSIBILITIES HELD: </p>
-            <p class="fox1"> ******* </p>
-            
-        
-        </div>
-        
-        </div>
-        </div> 
-     </div>
-      </div>
-        <br>
-    <!-- Cv End -->
     <div class="arrow-container">
         <a href="./team.html" class="arrow back">
           &#8592; <!-- Left Arrow -->
